@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  background-color: white;
+  overflow-x: hidden;
+  position: relative;
+  z-index: -10;
+}
+
+.headerContainer {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 8px black;
+}
+
+.logoContainer {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 80px;
+  padding: 0;
+  margin: 0;
+}
+
+.logoName {
+  color: rgb(231, 134, 55);
+  font-size: large;
+  font-weight: 600;
+}
+
+.navDropdown {
+  z-index: 2;
+  margin-right: 25px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.patty {
+  height: 15%;
+  width: 80%;
+  border-radius: 2px;
+  background-color: rgb(231, 134, 55);
+}
+
+#navItems {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.nav-item {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  background-color: rgba(34, 124, 157, 0.8);
+  text-decoration: none;
+  padding: 15px;
+}
+
+.nav-item:hover {
+  background-color: rgba(34, 124, 157, 0.6);
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+#navItems2 {
+  display: none;
+}
+
+.bodyContainer {
+  position: relative;
+  z-index: -1;
+  width: 100vw;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.bodyImg {
+  position: relative;
+  z-index: -1;
+  left: 60px;
+  height: 100%;
+  width: 170vh;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+#firstHeader {
+  color: white;
+  top: 40px;
+  left: 0px;
+  padding: 10px;
+  width: 70%;
+  font-size: 18px;
+  background-color: rgba(231, 134, 55, 0.9);
+  position: absolute;
+}
+
+#secondHeader {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#secondHeader h3 {
+  padding: 20px 50px;
+  background-color: rgba(228, 228, 228, 0.7);
+}
+
+#secondHeader p {
+    display: none;
+  }
+
+.bodyImg2 {
+  position: relative;
+  z-index: -1;
+  left: 60px;
+  height: 100%;
+  width: 100vh;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+#thirdHeader {
+  color: white;
+  bottom: 40px;
+  right: 0px;
+  padding: 5px;
+  padding-right: 20px;
+  width: 70%;
+  font-size: 15px;
+  background-color: rgba(34, 124, 157, 0.6);
+  position: absolute;
+  text-align: right;
+}
+
+.bodyImg3 {
+  position: relative;
+  z-index: -1;
+  left: 60px;
+  height: 100%;
+  width: 100vh;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+#fourthHeader {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#fourthHeader h3 {
+  margin-top: 40px;
+  padding: 30px 50px;
+  color: white;
+  background-color: rgba(231, 134, 55, 0.9);
+}
+
+#emailButton {
+  position: relative;
+  height: 50px;
+  width: 50%;
+  margin-bottom: 30px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  background-color: rgba(34, 124, 157, 1);
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#emailButton:hover {
+  background-color: rgba(231, 134, 55, 0.9);
+  cursor: pointer;
+}
+
+#buttonText {
+  color: white;
+  text-decoration: none;
+}
+
+.bodyImg4 {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.white {
+  background-color: white;
+}
+
+.orange {
+  background-color: rgb(231, 134, 55);
+}
+
+.blue {
+  background-color: rgb(34, 124, 157);
+}
+
+@media screen and (min-width: 768px) {
+  .navDropdown {
+    display: none;
+  }
+
+  #navItems2 {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    display: flex;
+    height: fit-content;
+    margin-right: 20px;
+  }
+
+  .nav-item {
+    background-color: white;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+  }
+
+  .nav-item a {
+    color: grey;
+    text-decoration: none;
+  }
+
+  .bodyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+
+  .bodyImg {
+    position: absolute;
+    right: 0px;
+    width: fit-content;
+    max-height: 500px;
+    object-fit: contain;
+  }
+
+  #firstHeader {
+    width: fit-content;
+    padding: 20px;
+  }
+
+  #secondHeader {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: left;
+    margin-right: 20%;
+  }
+
+  #secondHeader p {
+    width: 415px;
+    text-align: justify;
+  }
+
+  .bodyImg2 {
+    left: 0px;
+    max-height: 600px;
+    object-fit: contain;
+    width: 100%;
+    opacity: 50%;
+  }
+
+  #thirdHeader {
+    width: fit-content;
+  }
+
+  .bodyImg3 {
+    left: 0px;
+    width: 100%;
+  }
+}
