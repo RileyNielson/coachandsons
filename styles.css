@@ -309,7 +309,7 @@ body {
   .bodyImg2 {
     left: 0px;
     max-height: 600px;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
   }
 
